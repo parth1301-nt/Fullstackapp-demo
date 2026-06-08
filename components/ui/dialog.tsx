@@ -38,7 +38,7 @@ function DialogOverlay({
     <DialogPrimitive.Overlay
       data-slot="dialog-overlay"
       className={cn(
-        "fixed inset-0 z-30 bg-foreground/40 backdrop-blur-[2px]",
+        "fixed inset-0 z-30 bg-foreground/50 backdrop-blur-sm",
         "data-[state=open]:animate-in data-[state=closed]:animate-out",
         "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
         "motion-reduce:animate-none",
@@ -60,7 +60,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "fixed top-[50%] left-[50%] z-40 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-xl border border-border bg-background p-6 shadow-lg sm:max-w-lg",
+          "fixed top-[50%] left-[50%] z-40 grid w-full max-h-[calc(100vh-2rem)] max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 overflow-y-auto rounded-xl border border-border bg-background p-6 shadow-xl ring-1 ring-border/50 sm:max-w-lg",
           "motion-safe:duration-200 motion-reduce:duration-0",
           "data-[state=open]:animate-in data-[state=closed]:animate-out",
           "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
@@ -73,8 +73,9 @@ function DialogContent({
         {children}
         <DialogPrimitive.Close
           className={cn(
-            "absolute top-4 right-4 flex size-11 items-center justify-center rounded-md opacity-70",
-            "text-muted-foreground transition-opacity hover:bg-accent hover:text-foreground hover:opacity-100",
+            "absolute top-4 right-4 flex size-11 items-center justify-center rounded-lg opacity-70",
+            "text-muted-foreground motion-safe:transition-[opacity,background-color,color] motion-safe:duration-200",
+            "hover:bg-accent hover:text-foreground hover:opacity-100",
             "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none",
             "disabled:pointer-events-none",
             "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
@@ -93,7 +94,7 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="dialog-header"
       className={cn(
-        "flex flex-col gap-2 text-center sm:text-left",
+        "flex flex-col gap-2 pr-8 text-center sm:text-left",
         className
       )}
       {...props}
@@ -106,7 +107,7 @@ function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="dialog-footer"
       className={cn(
-        "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
+        "flex flex-col-reverse gap-2 border-t border-border pt-4 sm:flex-row sm:justify-end",
         className
       )}
       {...props}

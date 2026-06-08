@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
   [
-    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium",
+    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium",
     "motion-safe:transition-all motion-safe:duration-200 motion-reduce:transition-none",
     "outline-none shrink-0",
     "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
@@ -28,13 +28,13 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 hover:shadow-md",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-primary underline-offset-4 hover:underline focus-visible:ring-offset-0",
       },
       size: {
         default: "h-11 min-h-11 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-9 min-h-9 gap-2 rounded-md px-3 has-[>svg]:px-2.5",
-        lg: "h-12 min-h-12 rounded-md px-6 text-base has-[>svg]:px-4",
-        icon: "size-11 min-h-11 min-w-11",
+        sm: "h-9 min-h-9 gap-2 rounded-md px-3 text-xs has-[>svg]:px-2.5 sm:text-sm",
+        lg: "h-12 min-h-12 rounded-lg px-6 text-base has-[>svg]:px-4",
+        icon: "size-11 min-h-11 min-w-11 rounded-lg",
       },
     },
     defaultVariants: {

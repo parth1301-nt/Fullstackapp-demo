@@ -45,7 +45,7 @@ function SubdomainInput({ defaultValue }: { defaultValue?: string }) {
             required
           />
         </div>
-        <span className="bg-gray-100 px-3 border border-l-0 border-input rounded-r-md text-gray-500 min-h-[36px] flex items-center">
+        <span className="flex min-h-11 items-center rounded-r-md border border-l-0 border-input bg-muted px-4 text-sm text-muted-foreground">
           .{rootDomain}
         </span>
       </div>
@@ -80,7 +80,7 @@ function IconPicker({
               {icon ? (
                 <span className="text-3xl">{icon}</span>
               ) : (
-                <span className="text-gray-400 text-sm font-normal">
+                <span className="text-sm font-normal text-muted-foreground">
                   No icon selected
                 </span>
               )}
@@ -116,7 +116,7 @@ function IconPicker({
             </Popover>
           </Card>
         </div>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs leading-relaxed text-muted-foreground">
           Select an emoji to represent your subdomain
         </p>
       </div>
@@ -139,7 +139,9 @@ export function SubdomainForm() {
       <IconPicker icon={icon} setIcon={setIcon} defaultValue={state?.icon} />
 
       {state?.error && (
-        <div className="text-sm text-red-500">{state.error}</div>
+        <div className="rounded-md border border-destructive/30 bg-destructive/10 px-4 py-2 text-sm text-destructive">
+          {state.error}
+        </div>
       )}
 
       <Button type="submit" className="w-full" disabled={isPending || !icon}>

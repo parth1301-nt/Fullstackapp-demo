@@ -45,7 +45,7 @@ function SubdomainInput({ defaultValue }: { defaultValue?: string }) {
             required
           />
         </div>
-        <span className="flex min-h-11 items-center rounded-r-md border border-l-0 border-input bg-muted px-4 text-sm text-muted-foreground">
+        <span className="flex min-h-11 items-center rounded-r-lg border border-l-0 border-input bg-muted px-4 text-sm text-muted-foreground">
           .{rootDomain}
         </span>
       </div>

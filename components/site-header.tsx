@@ -6,7 +6,9 @@ import { rootDomain } from '@/lib/utils';
 const navLinks = [
   { href: '#features', label: 'Features' },
   { href: '#how-it-works', label: 'How it works' },
-  { href: '#create', label: 'Get started' }
+  { href: '#create', label: 'Get started' },
+  { href: '/privacy', label: 'Privacy' },
+  { href: '/terms', label: 'Terms' }
 ];
 
 export function SiteHeader() {

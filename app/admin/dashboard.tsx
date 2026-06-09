@@ -26,6 +26,16 @@ function DashboardHeader() {
     <div className="flex justify-between items-center mb-8">
       <h1 className="text-3xl font-bold">Subdomain Management</h1>
       <div className="flex items-center gap-4">
+        <Button variant="outline" size="sm" asChild>
+          <Link href="/admin/analytics">
+            Analytics
+          </Link>
+        </Button>
+        <form action="/api/logout" method="POST">
+          <Button variant="ghost" size="sm" type="submit">
+            Logout
+          </Button>
+        </form>
         <Link
           href={`${protocol}://${rootDomain}`}
           className="text-sm text-gray-500 hover:text-gray-700 transition-colors"

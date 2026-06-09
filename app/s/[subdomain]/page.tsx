@@ -38,7 +38,13 @@ export default async function SubdomainPage({
 
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-blue-50 to-white p-4">
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-4 right-4 flex gap-4">
+        <Link
+          href={`/s/${subdomain}/edit`}
+          className="text-sm text-blue-600 hover:text-blue-800 transition-colors font-medium"
+        >
+          Edit Page
+        </Link>
         <Link
           href={`${protocol}://${rootDomain}`}
           className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
@@ -56,6 +62,21 @@ export default async function SubdomainPage({
           <p className="mt-3 text-lg text-gray-600">
             This is your custom subdomain page
           </p>
+          {(subdomainData as any).bio && (
+            <p className="mt-4 text-gray-700 max-w-md mx-auto">
+              {(subdomainData as any).bio}
+            </p>
+          )}
+          {(subdomainData as any).website && (
+            <a
+              href={(subdomainData as any).website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 text-blue-600 hover:text-blue-800 transition-colors"
+            >
+              Visit Website →
+            </a>
+          )}
         </div>
       </div>
     </div>

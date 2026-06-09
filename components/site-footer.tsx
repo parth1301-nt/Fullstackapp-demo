@@ -11,7 +11,12 @@ const footerLinks = {
   ],
   platform: [
     { href: '/admin', label: 'Admin dashboard' },
+    { href: '/admin/analytics', label: 'Analytics' },
     { href: `${protocol}://${rootDomain}`, label: 'Home' }
+  ],
+  legal: [
+    { href: '/privacy', label: 'Privacy Policy' },
+    { href: '/terms', label: 'Terms of Service' }
   ]
 };
 
@@ -46,7 +51,7 @@ export function SiteFooter() {
             </p>
             <Button variant="outline" size="sm" className="mt-6" asChild>
               <a
-                href="https://github.com/vercel/platforms"
+                href="https://github.com/parth1301-nt"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -81,6 +86,24 @@ export function SiteFooter() {
             </h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.platform.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground motion-safe:transition-colors motion-safe:duration-200 hover:text-foreground focus-visible:outline-none focus-visible:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold tracking-tight text-foreground">
+              Legal
+            </h3>
+            <ul className="mt-4 space-y-3">
+              {footerLinks.legal.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

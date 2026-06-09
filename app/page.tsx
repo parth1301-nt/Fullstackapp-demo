@@ -9,6 +9,7 @@ import {
 import { SubdomainForm } from './subdomain-form';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { Testimonials, TestimonialsCompact } from '@/components/testimonials';
 import { rootDomain } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import {
@@ -167,6 +168,8 @@ export default async function HomePage() {
                   ))}
                 </div>
               </section>
+
+              <TestimonialsCompact />
             </div>
 
             <aside
@@ -193,6 +196,8 @@ export default async function HomePage() {
               </p>
             </aside>
           </div>
+
+          <Testimonials />
 
           <section className="mt-20 rounded-2xl border border-border bg-gradient-to-br from-muted/60 via-muted/30 to-background p-8 text-center sm:p-12">
             <h2 className="text-2xl font-semibold tracking-tight">

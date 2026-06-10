@@ -13,7 +13,10 @@ function Label({
     <LabelPrimitive.Root
       data-slot="label"
       className={cn(
-        "flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50",
+        "flex items-center gap-2 text-sm font-medium leading-normal text-foreground select-none",
+        "peer-disabled:cursor-not-allowed peer-disabled:opacity-50",
+        "group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50",
+        "[&>[data-slot=label-hint]]:font-normal [&>[data-slot=label-hint]]:text-muted-foreground",
         className
       )}
       {...props}
@@ -21,4 +24,17 @@ function Label({
   )
 }
 
-export { Label }
+function LabelHint({
+  className,
+  ...props
+}: React.ComponentProps<"span">) {
+  return (
+    <span
+      data-slot="label-hint"
+      className={cn("text-xs", className)}
+      {...props}
+    />
+  )
+}
+
+export { Label, LabelHint }

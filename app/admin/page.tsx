@@ -1,4 +1,6 @@
 import { getAllSubdomains } from '@/lib/subdomains';
+import { verifySession } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { AdminDashboard } from './dashboard';
 import { rootDomain } from '@/lib/utils';
@@ -9,7 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default async function AdminPage() {
-  // TODO: You can add authentication here with your preferred auth provider
+  const isAuthenticated = await verifySession();
+  if (!isAuthenticated) {
+    redirect('/login');
+  }
+
   const tenants = await getAllSubdomains();
 
   return (

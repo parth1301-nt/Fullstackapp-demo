@@ -5,6 +5,7 @@ A production-ready multi-tenant SaaS platform built with Next.js 15 that allows 
 ## What This App Does
 
 This platform enables anyone to quickly claim a unique subdomain and personalize it with an emoji. Users can:
+This platform enables anyone to quickly claim a unique subdomain and personalize it with an emoji. Users can:
 
 - **Create custom subdomains** - Choose a memorable name (e.g., `yourname.platform.com`)
 - **Add emoji identity** - Pick an emoji that represents their brand or personality

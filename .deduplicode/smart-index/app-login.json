@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:12.183Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "login",
+      "path": "app/login",
+      "purpose": "Enhanced directory analysis of login",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "page.tsx",
+        "path": "app/login/page.tsx",
+        "filePath": "app/login/page.tsx",
+        "filePurpose": "Exports function LoginPage for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 83,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/login/page.tsx",
+            "functionName": "loginAction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/login/page.tsx",
+            "functionName": "LoginPage",
+            "classification": "uncertain",
+            "confidence": 49,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 45,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/login/page.tsx",
+            "line": 18,
+            "endLine": 82,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 49,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "LoginPage",
+            "ruleId": "explicit-placeholder-stub-mock",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_login_page_tsx:function:18:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/login/page.tsx",
+            "line": 19,
+            "endLine": 30,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "loginAction",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_login_page_tsx:function:19:1"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "redirect",
+            "sourceModule": "next/navigation",
+            "isDefault": false,
+            "namedImports": [
+              "redirect"
+            ]
+          },
+          {
+            "name": "createSession",
+            "sourceModule": "@/lib/auth",
+            "isDefault": false,
+            "namedImports": [
+              "createSession"
+            ]
+          },
+          {
+            "name": "SiteHeader",
+            "sourceModule": "@/components/site-header",
+            "isDefault": false,
+            "namedImports": [
+              "SiteHeader"
+            ]
+          },
+          {
+            "name": "SiteFooter",
+            "sourceModule": "@/components/site-footer",
+            "isDefault": false,
+            "namedImports": [
+              "SiteFooter"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "Card",
+            "sourceModule": "@/components/ui/card",
+            "isDefault": false,
+            "namedImports": [
+              "Card",
+              "CardContent",
+              "CardDescription",
+              "CardHeader",
+              "CardTitle"
+            ]
+          },
+          {
+            "name": "Input",
+            "sourceModule": "@/components/ui/input",
+            "isDefault": false,
+            "namedImports": [
+              "Input"
+            ]
+          },
+          {
+            "name": "Label",
+            "sourceModule": "@/components/ui/label",
+            "isDefault": false,
+            "namedImports": [
+              "Label"
+            ]
+          },
+          {
+            "name": "Lock",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Lock",
+              "ArrowRight"
+            ]
+          },
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "LoginPage",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "LoginPage",
+            "signature": "function LoginPage()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "formData.get",
+              "createSession",
+              "redirect"
+            ],
+            "placeholderAnalysis": {
+              "classification": "uncertain",
+              "confidence": 49,
+              "isPlaceholder": true,
+              "reasons": [
+                "Contains placeholder/stub/mock/dummy marker",
+                "Function takes no parameters",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 45,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "loginAction",
+            "signature": "function loginAction()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "LoginPage",
+            "type": "function",
+            "signature": "function LoginPage()"
+          },
+          {
+            "name": "loginAction",
+            "type": "function",
+            "signature": "function loginAction()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "app/login/page.tsx",
+          "to": "next/navigation",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/lib/auth",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/site-header",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/site-footer",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/ui/card",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/ui/input",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "@/components/ui/label",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "app/login/page.tsx",
+          "to": "next/link",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

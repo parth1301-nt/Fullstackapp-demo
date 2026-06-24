@@ -1,0 +1,3063 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:37.202Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "ui",
+      "path": "components/ui",
+      "purpose": "Enhanced directory analysis of ui",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "button.tsx",
+        "path": "components/ui/button.tsx",
+        "filePath": "components/ui/button.tsx",
+        "filePurpose": "Provides Button, buttonVariants (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 69,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/button.tsx",
+            "functionName": "Button",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 66
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/button.tsx",
+            "line": 47,
+            "endLine": 66,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Button",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_button_tsx:function:47:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "Slot",
+            "sourceModule": "@radix-ui/react-slot",
+            "isDefault": false,
+            "namedImports": [
+              "Slot"
+            ]
+          },
+          {
+            "name": "cva",
+            "sourceModule": "class-variance-authority",
+            "isDefault": false,
+            "namedImports": [
+              "cva",
+              "VariantProps"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Button",
+            "type": "const"
+          },
+          {
+            "name": "buttonVariants",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Button",
+            "signature": "function Button()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn",
+              "buttonVariants"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Button",
+            "type": "function",
+            "signature": "function Button()"
+          },
+          {
+            "name": "C",
+            "type": "const",
+            "signature": "const C"
+          },
+          {
+            "name": "VariantProps",
+            "type": "type",
+            "signature": "type VariantProps"
+          }
+        ]
+      },
+      {
+        "name": "card.tsx",
+        "path": "components/ui/card.tsx",
+        "filePath": "components/ui/card.tsx",
+        "filePurpose": "Provides Card, CardHeader, CardFooter, CardTitle… (7 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 102,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "Card",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardAction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 68
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardContent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 70,
+              "endLine": 78
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardDescription",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardFooter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "functionName": "CardTitle",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 34,
+              "endLine": 45
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 5,
+            "endLine": 19,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Card",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:5:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 21,
+            "endLine": 32,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardHeader",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:21:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 34,
+            "endLine": 45,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardTitle",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:34:2"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 47,
+            "endLine": 55,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardDescription",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:47:3"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 57,
+            "endLine": 68,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardAction",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:57:4"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 70,
+            "endLine": 78,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardContent",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:70:5"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/card.tsx",
+            "line": 80,
+            "endLine": 91,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "CardFooter",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_card_tsx:function:80:6"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Card",
+            "type": "const"
+          },
+          {
+            "name": "CardHeader",
+            "type": "const"
+          },
+          {
+            "name": "CardFooter",
+            "type": "const"
+          },
+          {
+            "name": "CardTitle",
+            "type": "const"
+          },
+          {
+            "name": "CardAction",
+            "type": "const"
+          },
+          {
+            "name": "CardDescription",
+            "type": "const"
+          },
+          {
+            "name": "CardContent",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Card",
+            "signature": "function Card()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardHeader",
+            "signature": "function CardHeader()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardTitle",
+            "signature": "function CardTitle()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardDescription",
+            "signature": "function CardDescription()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardAction",
+            "signature": "function CardAction()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardContent",
+            "signature": "function CardContent()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "CardFooter",
+            "signature": "function CardFooter()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Card",
+            "type": "function",
+            "signature": "function Card()"
+          },
+          {
+            "name": "CardHeader",
+            "type": "function",
+            "signature": "function CardHeader()"
+          },
+          {
+            "name": "CardTitle",
+            "type": "function",
+            "signature": "function CardTitle()"
+          },
+          {
+            "name": "CardDescription",
+            "type": "function",
+            "signature": "function CardDescription()"
+          },
+          {
+            "name": "CardAction",
+            "type": "function",
+            "signature": "function CardAction()"
+          },
+          {
+            "name": "CardContent",
+            "type": "function",
+            "signature": "function CardContent()"
+          },
+          {
+            "name": "CardFooter",
+            "type": "function",
+            "signature": "function CardFooter()"
+          }
+        ]
+      },
+      {
+        "name": "dialog.tsx",
+        "path": "components/ui/dialog.tsx",
+        "filePath": "components/ui/dialog.tsx",
+        "filePurpose": "Provides Dialog, DialogClose, DialogContent, DialogDescription… (10 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 173,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "Dialog",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogClose",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 44,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogContent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score; Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 69,
+              "endLine": 107
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -40,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogDescription",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 148,
+              "endLine": 159
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogFooter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 122,
+              "endLine": 133
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 109,
+              "endLine": 120
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogOverlay",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 50,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogPortal",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 38,
+              "endLine": 42
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogTitle",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 135,
+              "endLine": 146
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "functionName": "DialogTrigger",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 26,
+            "endLine": 30,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Dialog",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:26:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 32,
+            "endLine": 36,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogTrigger",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:32:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 38,
+            "endLine": 42,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogPortal",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:38:2"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 44,
+            "endLine": 48,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogClose",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:44:3"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 50,
+            "endLine": 67,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogOverlay",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:50:4"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 69,
+            "endLine": 107,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score; Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogContent",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:69:5"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 109,
+            "endLine": 120,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogHeader",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:109:6"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 122,
+            "endLine": 133,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogFooter",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:122:7"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 135,
+            "endLine": 146,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogTitle",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:135:8"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/dialog.tsx",
+            "line": 148,
+            "endLine": 159,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "DialogDescription",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_dialog_tsx:function:148:9"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "* as DialogPrimitive",
+            "sourceModule": "@radix-ui/react-dialog",
+            "isDefault": false,
+            "namedImports": [
+              "* as DialogPrimitive"
+            ]
+          },
+          {
+            "name": "XIcon",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "XIcon"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Dialog",
+            "type": "const"
+          },
+          {
+            "name": "DialogClose",
+            "type": "const"
+          },
+          {
+            "name": "DialogContent",
+            "type": "const"
+          },
+          {
+            "name": "DialogDescription",
+            "type": "const"
+          },
+          {
+            "name": "DialogFooter",
+            "type": "const"
+          },
+          {
+            "name": "DialogHeader",
+            "type": "const"
+          },
+          {
+            "name": "DialogOverlay",
+            "type": "const"
+          },
+          {
+            "name": "DialogPortal",
+            "type": "const"
+          },
+          {
+            "name": "DialogTitle",
+            "type": "const"
+          },
+          {
+            "name": "DialogTrigger",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Dialog",
+            "signature": "function Dialog()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogTrigger",
+            "signature": "function DialogTrigger()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogPortal",
+            "signature": "function DialogPortal()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogClose",
+            "signature": "function DialogClose()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogOverlay",
+            "signature": "function DialogOverlay()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogContent",
+            "signature": "function DialogContent()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score; Intentionally unused parameter/variable (prefixed with _)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -40,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogHeader",
+            "signature": "function DialogHeader()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogFooter",
+            "signature": "function DialogFooter()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogTitle",
+            "signature": "function DialogTitle()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "DialogDescription",
+            "signature": "function DialogDescription()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Dialog",
+            "type": "function",
+            "signature": "function Dialog()"
+          },
+          {
+            "name": "DialogTrigger",
+            "type": "function",
+            "signature": "function DialogTrigger()"
+          },
+          {
+            "name": "DialogPortal",
+            "type": "function",
+            "signature": "function DialogPortal()"
+          },
+          {
+            "name": "DialogClose",
+            "type": "function",
+            "signature": "function DialogClose()"
+          },
+          {
+            "name": "DialogOverlay",
+            "type": "function",
+            "signature": "function DialogOverlay()"
+          },
+          {
+            "name": "DialogContent",
+            "type": "function",
+            "signature": "function DialogContent()"
+          },
+          {
+            "name": "DialogHeader",
+            "type": "function",
+            "signature": "function DialogHeader()"
+          },
+          {
+            "name": "DialogFooter",
+            "type": "function",
+            "signature": "function DialogFooter()"
+          },
+          {
+            "name": "DialogTitle",
+            "type": "function",
+            "signature": "function DialogTitle()"
+          },
+          {
+            "name": "DialogDescription",
+            "type": "function",
+            "signature": "function DialogDescription()"
+          }
+        ]
+      },
+      {
+        "name": "emoji-picker.tsx",
+        "path": "components/ui/emoji-picker.tsx",
+        "filePath": "components/ui/emoji-picker.tsx",
+        "filePurpose": "Provides EmojiPicker, EmojiPickerSearch, EmojiPickerContent, EmojiPickerFooter (4 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 187,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPicker",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerCategoryHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 92,
+              "endLine": 105
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerContent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 107,
+              "endLine": 141
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerEmoji",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 66,
+              "endLine": 90
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerFooter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 143,
+              "endLine": 179
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerRow",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "functionName": "EmojiPickerSearch",
+            "classification": "uncertain",
+            "confidence": 42,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 45,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 14,
+            "endLine": 28,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPicker",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:14:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 30,
+            "endLine": 56,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 42,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerSearch",
+            "ruleId": "explicit-placeholder-stub-mock",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:30:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 58,
+            "endLine": 64,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerRow",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:58:2"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 66,
+            "endLine": 90,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerEmoji",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:66:3"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 92,
+            "endLine": 105,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerCategoryHeader",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:92:4"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 107,
+            "endLine": 141,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerContent",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:107:5"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/emoji-picker.tsx",
+            "line": 143,
+            "endLine": 179,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EmojiPickerFooter",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_emoji-picker_tsx:function:143:6"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "EmojiPickerListCategoryHeaderProps",
+            "sourceModule": "frimousse",
+            "isDefault": false,
+            "namedImports": [
+              "EmojiPickerListCategoryHeaderProps",
+              "EmojiPickerListEmojiProps",
+              "EmojiPickerListRowProps",
+              "EmojiPickerPrimitive"
+            ]
+          },
+          {
+            "name": "LoaderIcon",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "LoaderIcon",
+              "SearchIcon"
+            ]
+          },
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "EmojiPicker",
+            "type": "const"
+          },
+          {
+            "name": "EmojiPickerSearch",
+            "type": "const"
+          },
+          {
+            "name": "EmojiPickerContent",
+            "type": "const"
+          },
+          {
+            "name": "EmojiPickerFooter",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "EmojiPicker",
+            "signature": "function EmojiPicker()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerSearch",
+            "signature": "function EmojiPickerSearch()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "uncertain",
+              "confidence": 42,
+              "isPlaceholder": false,
+              "reasons": [
+                "Contains placeholder/stub/mock/dummy marker",
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 45,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerRow",
+            "signature": "function EmojiPickerRow()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerEmoji",
+            "signature": "function EmojiPickerEmoji()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerCategoryHeader",
+            "signature": "function EmojiPickerCategoryHeader()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerContent",
+            "signature": "function EmojiPickerContent()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EmojiPickerFooter",
+            "signature": "function EmojiPickerFooter()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "EmojiPicker",
+            "type": "function",
+            "signature": "function EmojiPicker()"
+          },
+          {
+            "name": "EmojiPickerSearch",
+            "type": "function",
+            "signature": "function EmojiPickerSearch()"
+          },
+          {
+            "name": "EmojiPickerRow",
+            "type": "function",
+            "signature": "function EmojiPickerRow()"
+          },
+          {
+            "name": "EmojiPickerEmoji",
+            "type": "function",
+            "signature": "function EmojiPickerEmoji()"
+          },
+          {
+            "name": "EmojiPickerCategoryHeader",
+            "type": "function",
+            "signature": "function EmojiPickerCategoryHeader()"
+          },
+          {
+            "name": "EmojiPickerContent",
+            "type": "function",
+            "signature": "function EmojiPickerContent()"
+          },
+          {
+            "name": "EmojiPickerFooter",
+            "type": "function",
+            "signature": "function EmojiPickerFooter()"
+          },
+          {
+            "name": "EmojiPickerListCategoryHeaderProps",
+            "type": "type",
+            "signature": "type EmojiPickerListCategoryHeaderProps"
+          },
+          {
+            "name": "EmojiPickerListEmojiProps",
+            "type": "type",
+            "signature": "type EmojiPickerListEmojiProps"
+          },
+          {
+            "name": "EmojiPickerListRowProps",
+            "type": "type",
+            "signature": "type EmojiPickerListRowProps"
+          }
+        ]
+      },
+      {
+        "name": "input.tsx",
+        "path": "components/ui/input.tsx",
+        "filePath": "components/ui/input.tsx",
+        "filePurpose": "Exports const Input for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/input.tsx",
+            "functionName": "Input",
+            "classification": "uncertain",
+            "confidence": 42,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 45,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/input.tsx",
+            "line": 5,
+            "endLine": 27,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 42,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Input",
+            "ruleId": "explicit-placeholder-stub-mock",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_input_tsx:function:5:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Input",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Input",
+            "signature": "function Input()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "uncertain",
+              "confidence": 42,
+              "isPlaceholder": false,
+              "reasons": [
+                "Contains placeholder/stub/mock/dummy marker",
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 45,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Input",
+            "type": "function",
+            "signature": "function Input()"
+          }
+        ]
+      },
+      {
+        "name": "label.tsx",
+        "path": "components/ui/label.tsx",
+        "filePath": "components/ui/label.tsx",
+        "filePurpose": "Provides Label, LabelHint (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 41,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/label.tsx",
+            "functionName": "Label",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/label.tsx",
+            "functionName": "LabelHint",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 38
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/label.tsx",
+            "line": 8,
+            "endLine": 25,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Label",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_label_tsx:function:8:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/label.tsx",
+            "line": 27,
+            "endLine": 38,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "LabelHint",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_label_tsx:function:27:1"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "* as LabelPrimitive",
+            "sourceModule": "@radix-ui/react-label",
+            "isDefault": false,
+            "namedImports": [
+              "* as LabelPrimitive"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Label",
+            "type": "const"
+          },
+          {
+            "name": "LabelHint",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Label",
+            "signature": "function Label()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "LabelHint",
+            "signature": "function LabelHint()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Label",
+            "type": "function",
+            "signature": "function Label()"
+          },
+          {
+            "name": "LabelHint",
+            "type": "function",
+            "signature": "function LabelHint()"
+          }
+        ]
+      },
+      {
+        "name": "popover.tsx",
+        "path": "components/ui/popover.tsx",
+        "filePath": "components/ui/popover.tsx",
+        "filePurpose": "Provides Popover, PopoverTrigger, PopoverContent, PopoverAnchor (4 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 55,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "functionName": "Popover",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "functionName": "PopoverAnchor",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "functionName": "PopoverContent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "functionName": "PopoverTrigger",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "line": 8,
+            "endLine": 12,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Popover",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_popover_tsx:function:8:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "line": 14,
+            "endLine": 18,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "PopoverTrigger",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_popover_tsx:function:14:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "line": 20,
+            "endLine": 46,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "PopoverContent",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_popover_tsx:function:20:2"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/ui/popover.tsx",
+            "line": 48,
+            "endLine": 52,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "PopoverAnchor",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_ui_popover_tsx:function:48:3"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as React",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "* as React"
+            ]
+          },
+          {
+            "name": "* as PopoverPrimitive",
+            "sourceModule": "@radix-ui/react-popover",
+            "isDefault": false,
+            "namedImports": [
+              "* as PopoverPrimitive"
+            ]
+          },
+          {
+            "name": "cn",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "cn"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Popover",
+            "type": "const"
+          },
+          {
+            "name": "PopoverTrigger",
+            "type": "const"
+          },
+          {
+            "name": "PopoverContent",
+            "type": "const"
+          },
+          {
+            "name": "PopoverAnchor",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "Popover",
+            "signature": "function Popover()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "PopoverTrigger",
+            "signature": "function PopoverTrigger()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "PopoverContent",
+            "signature": "function PopoverContent()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "PopoverAnchor",
+            "signature": "function PopoverAnchor()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Popover",
+            "type": "function",
+            "signature": "function Popover()"
+          },
+          {
+            "name": "PopoverTrigger",
+            "type": "function",
+            "signature": "function PopoverTrigger()"
+          },
+          {
+            "name": "PopoverContent",
+            "type": "function",
+            "signature": "function PopoverContent()"
+          },
+          {
+            "name": "PopoverAnchor",
+            "type": "function",
+            "signature": "function PopoverAnchor()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "components/ui/button.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/button.tsx",
+          "to": "@radix-ui/react-slot",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/button.tsx",
+          "to": "class-variance-authority",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/button.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/card.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/card.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/dialog.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/dialog.tsx",
+          "to": "@radix-ui/react-dialog",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/dialog.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/dialog.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/emoji-picker.tsx",
+          "to": "frimousse",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/emoji-picker.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/emoji-picker.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/emoji-picker.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/input.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/input.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/label.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/label.tsx",
+          "to": "@radix-ui/react-label",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/label.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/popover.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/popover.tsx",
+          "to": "@radix-ui/react-popover",
+          "type": "imports"
+        },
+        {
+          "from": "components/ui/popover.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

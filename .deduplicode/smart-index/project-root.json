@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:49.850Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "placeholder-detection-1782284988850-d8b5gj848",
+      "path": ".",
+      "purpose": "Enhanced directory analysis of placeholder-detection-1782284988850-d8b5gj848",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "middleware.ts",
+        "path": "middleware.ts",
+        "filePath": "middleware.ts",
+        "filePurpose": "Provides configuration or options for the package",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 74,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/middleware.ts",
+            "functionName": "extractSubdomain",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 41
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/middleware.ts",
+            "functionName": "middleware",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 43,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/middleware.ts",
+            "line": 4,
+            "endLine": 41,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "extractSubdomain",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_middleware_ts:function:4:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/middleware.ts",
+            "line": 43,
+            "endLine": 61,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "middleware",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_middleware_ts:function:43:1"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NextRequest",
+            "sourceModule": "next/server",
+            "isDefault": false,
+            "namedImports": [
+              "NextRequest",
+              "NextResponse"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "middleware",
+            "type": "function"
+          },
+          {
+            "name": "config",
+            "type": "const"
+          }
+        ],
+        "functions": [
+          {
+            "name": "extractSubdomain",
+            "signature": "function extractSubdomain()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "request.headers.get",
+              "host.split",
+              "url.includes",
+              "url.match",
+              "hostname.includes",
+              "hostname.split",
+              "rootDomain.split",
+              "hostname.endsWith",
+              "hostname.replace"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score; Properly uses assigned variables",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -50,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "middleware",
+            "signature": "function middleware()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "extractSubdomain",
+              "pathname.startsWith",
+              "NextResponse.redirect",
+              "NextResponse.rewrite",
+              "NextResponse.next"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -37,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "extractSubdomain",
+            "type": "function",
+            "signature": "function extractSubdomain()"
+          },
+          {
+            "name": "middleware",
+            "type": "function",
+            "signature": "function middleware()"
+          },
+          {
+            "name": "NextRequest",
+            "type": "type",
+            "signature": "type NextRequest"
+          }
+        ]
+      },
+      {
+        "name": "next.config.ts",
+        "path": "next.config.ts",
+        "filePath": "next.config.ts",
+        "filePurpose": "Configuration file (exports: default)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 25,
+        "placeholderDetection": [],
+        "importedModules": [
+          {
+            "name": "NextConfig",
+            "sourceModule": "next",
+            "isDefault": false,
+            "namedImports": [
+              "NextConfig"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "postcss.config.mjs",
+        "path": "postcss.config.mjs",
+        "filePath": "postcss.config.mjs",
+        "filePurpose": "Configuration file (exports: default)",
+        "languageDetail": "JavaScript ES2022",
+        "lineCount": 6,
+        "placeholderDetection": [],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "app",
+        "relativePath": "app",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of app",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "components",
+        "relativePath": "components",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of components",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "lib",
+        "relativePath": "lib",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of lib",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "middleware.ts",
+          "to": "next/server",
+          "type": "imports"
+        },
+        {
+          "from": "middleware.ts",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "next.config.ts",
+          "to": "next",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

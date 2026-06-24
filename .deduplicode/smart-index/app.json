@@ -1,0 +1,1360 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:33.064Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "app",
+      "path": "app",
+      "purpose": "Enhanced directory analysis of app",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "actions.ts",
+        "path": "app/actions.ts",
+        "filePath": "app/actions.ts",
+        "filePurpose": "Provides createSubdomainAction, deleteSubdomainAction (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 70,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/actions.ts",
+            "functionName": "createSubdomainAction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Parameters unused.",
+              "High context score suggests legitimate implementation; Factory function pattern; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 59
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 25,
+              "commentAnalysis": 0,
+              "contextFilter": -52,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/actions.ts",
+            "functionName": "deleteSubdomainAction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Parameters unused.",
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 61,
+              "endLine": 69
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 37,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/actions.ts",
+            "line": 9,
+            "endLine": 59,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Parameters unused.",
+              "High context score suggests legitimate implementation; Factory function pattern; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "createSubdomainAction",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_actions_ts:function:9:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/actions.ts",
+            "line": 61,
+            "endLine": 69,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1) Parameters unused. High context score suggests legitimate implementation; Returns computed value from external calls or processing Safety cap applied: cheap heuristics on"
+            ],
+            "functionName": "deleteSubdomainAction",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_actions_ts:function:61:1"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "redis",
+            "sourceModule": "@/lib/redis",
+            "isDefault": false,
+            "namedImports": [
+              "redis"
+            ]
+          },
+          {
+            "name": "isValidIcon",
+            "sourceModule": "@/lib/subdomains",
+            "isDefault": false,
+            "namedImports": [
+              "isValidIcon"
+            ]
+          },
+          {
+            "name": "revalidatePath",
+            "sourceModule": "next/cache",
+            "isDefault": false,
+            "namedImports": [
+              "revalidatePath"
+            ]
+          },
+          {
+            "name": "redirect",
+            "sourceModule": "next/navigation",
+            "isDefault": false,
+            "namedImports": [
+              "redirect"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain",
+              "protocol"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "createSubdomainAction",
+            "type": "function"
+          },
+          {
+            "name": "deleteSubdomainAction",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "createSubdomainAction",
+            "signature": "function createSubdomainAction()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "formData.get",
+              "isValidIcon",
+              "replace",
+              "subdomain.toLowerCase",
+              "redis.get",
+              "redis.set",
+              "Date.now",
+              "redirect"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Parameters unused.",
+                "High context score suggests legitimate implementation; Factory function pattern; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 25,
+                "commentAnalysis": 0,
+                "contextFilter": -52,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "deleteSubdomainAction",
+            "signature": "function deleteSubdomainAction()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "formData.get",
+              "redis.del",
+              "revalidatePath"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Parameters unused.",
+                "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 37,
+                "commentAnalysis": 0,
+                "contextFilter": -37,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createSubdomainAction",
+            "type": "function",
+            "signature": "function createSubdomainAction()"
+          },
+          {
+            "name": "deleteSubdomainAction",
+            "type": "function",
+            "signature": "function deleteSubdomainAction()"
+          }
+        ]
+      },
+      {
+        "name": "layout.tsx",
+        "path": "app/layout.tsx",
+        "filePath": "app/layout.tsx",
+        "filePurpose": "Provides metadata, RootLayout (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/layout.tsx",
+            "functionName": "RootLayout",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/layout.tsx",
+            "line": 16,
+            "endLine": 29,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "RootLayout",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_layout_tsx:function:16:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Metadata",
+            "sourceModule": "next",
+            "isDefault": false,
+            "namedImports": [
+              "Metadata"
+            ]
+          },
+          {
+            "name": "Geist",
+            "sourceModule": "next/font/google",
+            "isDefault": false,
+            "namedImports": [
+              "Geist"
+            ]
+          },
+          {
+            "name": "SpeedInsights",
+            "sourceModule": "@vercel/speed-insights/next",
+            "isDefault": false,
+            "namedImports": [
+              "SpeedInsights"
+            ]
+          },
+          {
+            "name": "./globals.css",
+            "sourceModule": "./globals.css",
+            "isDefault": false
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "metadata",
+            "type": "const"
+          },
+          {
+            "name": "RootLayout",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "RootLayout",
+            "signature": "function RootLayout()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RootLayout",
+            "type": "function",
+            "signature": "function RootLayout()"
+          }
+        ]
+      },
+      {
+        "name": "not-found.tsx",
+        "path": "app/not-found.tsx",
+        "filePath": "app/not-found.tsx",
+        "filePurpose": "Exports function NotFound for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 57,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/not-found.tsx",
+            "functionName": "NotFound",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/not-found.tsx",
+            "line": 8,
+            "endLine": 56,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "NotFound",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_not-found_tsx:function:8:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "useEffect",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "useEffect",
+              "useState"
+            ]
+          },
+          {
+            "name": "usePathname",
+            "sourceModule": "next/navigation",
+            "isDefault": false,
+            "namedImports": [
+              "usePathname"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain",
+              "protocol"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NotFound",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "NotFound",
+            "signature": "function NotFound()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useState",
+              "usePathname",
+              "useEffect",
+              "pathname.split",
+              "setSubdomain",
+              "hostname.includes",
+              "rootDomain.split",
+              "hostname.split"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 4,
+              "isPlaceholder": false,
+              "reasons": [
+                "Function takes no parameters",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NotFound",
+            "type": "function",
+            "signature": "function NotFound()"
+          }
+        ]
+      },
+      {
+        "name": "subdomain-form.tsx",
+        "path": "app/subdomain-form.tsx",
+        "filePath": "app/subdomain-form.tsx",
+        "filePurpose": "Exports function SubdomainForm for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 153,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "functionName": "handleEmojiSelect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 70
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "functionName": "IconPicker",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 56,
+              "endLine": 125
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "functionName": "SubdomainForm",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 127,
+              "endLine": 152
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "functionName": "SubdomainInput",
+            "classification": "uncertain",
+            "confidence": 55,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 54
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 45,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "line": 33,
+            "endLine": 54,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 55,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "SubdomainInput",
+            "ruleId": "explicit-placeholder-stub-mock",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_subdomain-form_tsx:function:33:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "line": 56,
+            "endLine": 125,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "IconPicker",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_subdomain-form_tsx:function:56:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "line": 67,
+            "endLine": 70,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "handleEmojiSelect",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_subdomain-form_tsx:function:67:2"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/subdomain-form.tsx",
+            "line": 127,
+            "endLine": 152,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "SubdomainForm",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_subdomain-form_tsx:function:127:3"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "React",
+            "sourceModule": "react",
+            "isDefault": true
+          },
+          {
+            "name": "useState",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "useState"
+            ]
+          },
+          {
+            "name": "useActionState",
+            "sourceModule": "react",
+            "isDefault": false,
+            "namedImports": [
+              "useActionState"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "Input",
+            "sourceModule": "@/components/ui/input",
+            "isDefault": false,
+            "namedImports": [
+              "Input"
+            ]
+          },
+          {
+            "name": "Label",
+            "sourceModule": "@/components/ui/label",
+            "isDefault": false,
+            "namedImports": [
+              "Label"
+            ]
+          },
+          {
+            "name": "Popover",
+            "sourceModule": "@/components/ui/popover",
+            "isDefault": false,
+            "namedImports": [
+              "Popover",
+              "PopoverContent",
+              "PopoverTrigger"
+            ]
+          },
+          {
+            "name": "Smile",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Smile"
+            ]
+          },
+          {
+            "name": "Card",
+            "sourceModule": "@/components/ui/card",
+            "isDefault": false,
+            "namedImports": [
+              "Card"
+            ]
+          },
+          {
+            "name": "EmojiPicker",
+            "sourceModule": "@/components/ui/emoji-picker",
+            "isDefault": false,
+            "namedImports": [
+              "EmojiPicker",
+              "EmojiPickerContent",
+              "EmojiPickerSearch",
+              "EmojiPickerFooter"
+            ]
+          },
+          {
+            "name": "createSubdomainAction",
+            "sourceModule": "@/app/actions",
+            "isDefault": false,
+            "namedImports": [
+              "createSubdomainAction"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SubdomainForm",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "SubdomainInput",
+            "signature": "function SubdomainInput()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "uncertain",
+              "confidence": 55,
+              "isPlaceholder": true,
+              "reasons": [
+                "Contains placeholder/stub/mock/dummy marker",
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 45,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "IconPicker",
+            "signature": "function IconPicker()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useState",
+              "setIcon",
+              "setIsPickerOpen"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score; Event handler or callback function",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -27,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "SubdomainForm",
+            "signature": "function SubdomainForm()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "useState",
+              "useActionState"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": -25,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "handleEmojiSelect",
+            "signature": "const handleEmojiSelect = () =>",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Very short function (4 lines)",
+                "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 18,
+                "commentAnalysis": 0,
+                "contextFilter": -42,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SubdomainInput",
+            "type": "function",
+            "signature": "function SubdomainInput()"
+          },
+          {
+            "name": "IconPicker",
+            "type": "function",
+            "signature": "function IconPicker()"
+          },
+          {
+            "name": "SubdomainForm",
+            "type": "function",
+            "signature": "function SubdomainForm()"
+          },
+          {
+            "name": "handleEmojiSelect",
+            "type": "arrow",
+            "signature": "const handleEmojiSelect = () =>"
+          },
+          {
+            "name": "React",
+            "type": "type",
+            "signature": "type React"
+          },
+          {
+            "name": "CreateState",
+            "type": "type",
+            "signature": "type CreateState"
+          }
+        ]
+      },
+      {
+        "name": "page.tsx",
+        "path": "app/page.tsx",
+        "filePath": "app/page.tsx",
+        "filePurpose": "Exports function HomePage for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 224,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/page.tsx",
+            "functionName": "HomePage",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 68,
+              "endLine": 223
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/page.tsx",
+            "line": 68,
+            "endLine": 223,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "HomePage",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_page_tsx:function:68:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "Globe",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Globe",
+              "Sparkles",
+              "Shield",
+              "Zap",
+              "ArrowRight"
+            ]
+          },
+          {
+            "name": "SubdomainForm",
+            "sourceModule": "./subdomain-form",
+            "isDefault": false,
+            "namedImports": [
+              "SubdomainForm"
+            ]
+          },
+          {
+            "name": "SiteHeader",
+            "sourceModule": "@/components/site-header",
+            "isDefault": false,
+            "namedImports": [
+              "SiteHeader"
+            ]
+          },
+          {
+            "name": "SiteFooter",
+            "sourceModule": "@/components/site-footer",
+            "isDefault": false,
+            "namedImports": [
+              "SiteFooter"
+            ]
+          },
+          {
+            "name": "Testimonials",
+            "sourceModule": "@/components/testimonials",
+            "isDefault": false,
+            "namedImports": [
+              "Testimonials",
+              "TestimonialsCompact"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "Card",
+            "sourceModule": "@/components/ui/card",
+            "isDefault": false,
+            "namedImports": [
+              "Card",
+              "CardContent",
+              "CardDescription",
+              "CardHeader",
+              "CardTitle"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HomePage",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "HomePage",
+            "signature": "function HomePage()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "features.map",
+              "steps.map"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 16,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HomePage",
+            "type": "function",
+            "signature": "function HomePage()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "admin",
+        "relativePath": "admin",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of admin",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "api",
+        "relativePath": "api",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of api",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "login",
+        "relativePath": "login",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of login",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "privacy",
+        "relativePath": "privacy",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of privacy",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "s",
+        "relativePath": "s",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of s",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "terms",
+        "relativePath": "terms",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of terms",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "app/actions.ts",
+          "to": "@/lib/redis",
+          "type": "imports"
+        },
+        {
+          "from": "app/actions.ts",
+          "to": "@/lib/subdomains",
+          "type": "imports"
+        },
+        {
+          "from": "app/actions.ts",
+          "to": "next/cache",
+          "type": "imports"
+        },
+        {
+          "from": "app/actions.ts",
+          "to": "next/navigation",
+          "type": "imports"
+        },
+        {
+          "from": "app/actions.ts",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "app/layout.tsx",
+          "to": "next",
+          "type": "imports"
+        },
+        {
+          "from": "app/layout.tsx",
+          "to": "next/font/google",
+          "type": "imports"
+        },
+        {
+          "from": "app/layout.tsx",
+          "to": "@vercel/speed-insights/next",
+          "type": "imports"
+        },
+        {
+          "from": "app/not-found.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "app/not-found.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "app/not-found.tsx",
+          "to": "next/navigation",
+          "type": "imports"
+        },
+        {
+          "from": "app/not-found.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "react",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/input",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/label",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/popover",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/card",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/components/ui/emoji-picker",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/app/actions",
+          "type": "imports"
+        },
+        {
+          "from": "app/subdomain-form.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/components/site-header",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/components/site-footer",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/components/testimonials",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "app/page.tsx",
+          "to": "@/components/ui/card",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

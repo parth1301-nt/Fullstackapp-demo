@@ -8,6 +8,8 @@ const geistSans = Geist({
   subsets: ['latin']
 });
 
+// test commnets
+
 export const metadata: Metadata = {
   title: 'Platforms Starter Kit',
   description: 'Next.js template for building a multi-tenant SaaS.'

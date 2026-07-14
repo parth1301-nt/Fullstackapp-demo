@@ -3,6 +3,8 @@ import { Globe, Github, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { rootDomain, protocol } from '@/lib/utils';
 
+// teest commanets
+
 const footerLinks = {
   product: [
     { href: '#features', label: 'Features' },

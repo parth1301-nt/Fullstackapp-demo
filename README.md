@@ -1,12 +1,12 @@
 # TEST 2
 
-TEST 2 is a sample project designed to demonstrate and validate core functionalities for testing purposes. It provides a framework for running and evaluating test cases efficiently.
+TEST 2 is a sample project designed to demonstrate and validate core functionalities for testing purposes.
 
 ## Features
 
-- Simple setup and execution
-- Modular test case structure
-- Clear output and reporting
+- Simple and modular codebase
+- Easy-to-run test cases
+- Clear output for test results
 
 ## Installation
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run all tests:
+Run the tests with:
 
 ```bash
 python test2.py
@@ -33,7 +33,7 @@ python test2.py
 
 ## Contributing
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 

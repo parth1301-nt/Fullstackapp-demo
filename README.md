@@ -1,54 +1,43 @@
 # TEST 2
 
-TEST 2 is a project designed to demonstrate and validate core functionalities for testing purposes. It provides a simple environment to run, evaluate, and extend basic test cases.
+TEST 2 is a project designed to demonstrate and validate core functionalities for testing purposes.
 
 ## Features
 
-- Easy-to-understand test structure
-- Modular and extensible codebase
-- Clear output and logging for test results
+- Simple and modular structure
+- Easy-to-run test cases
+- Clear output for verification
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Specify language/runtime, e.g., Python 3.8+ or Node.js 16+]
+- [List any dependencies or requirements, e.g., Python 3.8+]
 
 ### Installation
 
 Clone the repository:
-
 ```bash
 git clone https://github.com/yourusername/test2.git
 cd test2
 ```
 
-Install dependencies:
-
+Install dependencies (if any):
 ```bash
-# Example for Python
 pip install -r requirements.txt
-
-# Example for Node.js
-npm install
 ```
 
 ### Usage
 
-Run the test suite:
-
+Run the main test script:
 ```bash
-# Example for Python
 python test2.py
-
-# Example for Node.js
-npm test
 ```
 
 ## Contributing
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+Contributions are welcome! Please open issues or submit pull requests.
 
 ## License
 
-[MIT](LICENSE)
+This project is licensed under the [MIT License](LICENSE).

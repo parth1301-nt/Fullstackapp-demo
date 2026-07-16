@@ -9,6 +9,9 @@ import { rootDomain, protocol } from '@/lib/utils';
 // teest commanets
 // teest commanets
 // teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
 
 
 
@@ -31,6 +34,8 @@ const footerLinks = {
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
+
+
 
   return (
     <footer className="relative z-10 border-t border-border bg-muted/30">

@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-06-24T07:10:07.555Z",
+  "generatedAt": "2026-07-16T06:07:13.108Z",
   "configuration": {
-    "detectPlaceholders": true,
-    "placeholderConfidence": 45,
+    "detectPlaceholders": false,
+    "placeholderConfidence": 40,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,54 +25,6 @@
         "filePurpose": "Exports function POST for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 11,
-        "placeholderDetection": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/api/logout/route.ts",
-            "functionName": "POST",
-            "classification": "definite-legitimate",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Low cyclomatic complexity (1)",
-              "Function takes no parameters",
-              "High context score suggests legitimate implementation",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "location": {
-              "startLine": 5,
-              "endLine": 10
-            },
-            "detectionMethods": {
-              "explicitMarkers": 0,
-              "namingPatterns": 0,
-              "astAnalysis": 16,
-              "commentAnalysis": 0,
-              "contextFilter": -25,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            }
-          }
-        ],
-        "findings": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/api/logout/route.ts",
-            "line": 5,
-            "endLine": 10,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Low cyclomatic complexity (1)",
-              "Function takes no parameters",
-              "High context score suggests legitimate implementation",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "functionName": "POST",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_api_logout_route_ts:function:5:0"
-          }
-        ],
         "importedModules": [
           {
             "name": "destroySession",
@@ -117,28 +69,7 @@
               "cookies",
               "cookieStore.delete",
               "redirect"
-            ],
-            "placeholderAnalysis": {
-              "classification": "definite-legitimate",
-              "confidence": 0,
-              "isPlaceholder": false,
-              "reasons": [
-                "Low cyclomatic complexity (1)",
-                "Function takes no parameters",
-                "High context score suggests legitimate implementation",
-                "Safety cap applied: cheap heuristics only"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 0,
-                "namingPatterns": 0,
-                "astAnalysis": 16,
-                "commentAnalysis": 0,
-                "contextFilter": -25,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            ]
           }
         ],
         "classes": [],

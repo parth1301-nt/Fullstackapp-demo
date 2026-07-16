@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-06-24T07:10:02.402Z",
+  "generatedAt": "2026-07-16T06:05:42.142Z",
   "configuration": {
-    "detectPlaceholders": true,
-    "placeholderConfidence": 45,
+    "detectPlaceholders": false,
+    "placeholderConfidence": 40,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,146 +25,6 @@
         "filePurpose": "Exports function AdminDashboard for use by other modules",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 147,
-        "placeholderDetection": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "functionName": "AdminDashboard",
-            "classification": "definite-legitimate",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Low cyclomatic complexity (1)",
-              "High context score suggests legitimate implementation",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "location": {
-              "startLine": 122,
-              "endLine": 146
-            },
-            "detectionMethods": {
-              "explicitMarkers": 0,
-              "namingPatterns": 0,
-              "astAnalysis": 12,
-              "commentAnalysis": 0,
-              "contextFilter": -25,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            }
-          },
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "functionName": "DashboardHeader",
-            "classification": "definite-placeholder",
-            "confidence": 94,
-            "isPlaceholder": true,
-            "reasons": [
-              "Contains explicit placeholder marker",
-              "Low cyclomatic complexity (1)",
-              "Function takes no parameters"
-            ],
-            "location": {
-              "startLine": 22,
-              "endLine": 48
-            },
-            "detectionMethods": {
-              "explicitMarkers": 78,
-              "namingPatterns": 0,
-              "astAnalysis": 16,
-              "commentAnalysis": 0,
-              "contextFilter": 0,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            },
-            "reasonSignals": [
-              {
-                "ruleId": "explicit-todo-fixme",
-                "score": 78,
-                "message": "Contains explicit placeholder marker",
-                "axis": "intent",
-                "tags": [
-                  "todo"
-                ]
-              }
-            ]
-          },
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "functionName": "TenantGrid",
-            "classification": "definite-legitimate",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Moderate context score",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "location": {
-              "startLine": 50,
-              "endLine": 120
-            },
-            "detectionMethods": {
-              "explicitMarkers": 0,
-              "namingPatterns": 0,
-              "astAnalysis": 0,
-              "commentAnalysis": 0,
-              "contextFilter": -15,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            }
-          }
-        ],
-        "findings": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "line": 22,
-            "endLine": 48,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 94,
-            "isPlaceholder": true,
-            "reasons": [
-              "Contains explicit placeholder marker",
-              "Low cyclomatic complexity (1)",
-              "Function takes no parameters"
-            ],
-            "functionName": "DashboardHeader",
-            "ruleId": "explicit-todo-fixme",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_admin_dashboard_tsx:function:22:0"
-          },
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "line": 50,
-            "endLine": 120,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Moderate context score",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "functionName": "TenantGrid",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_admin_dashboard_tsx:function:50:1"
-          },
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/dashboard.tsx",
-            "line": 122,
-            "endLine": 146,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 0,
-            "isPlaceholder": false,
-            "reasons": [
-              "Low cyclomatic complexity (1)",
-              "High context score suggests legitimate implementation",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "functionName": "AdminDashboard",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_admin_dashboard_tsx:function:122:2"
-          }
-        ],
         "importedModules": [
           {
             "name": "useActionState",
@@ -238,27 +98,7 @@
             "parameters": [],
             "returnType": "",
             "isAsync": false,
-            "calls": [],
-            "placeholderAnalysis": {
-              "classification": "definite-placeholder",
-              "confidence": 94,
-              "isPlaceholder": true,
-              "reasons": [
-                "Contains explicit placeholder marker",
-                "Low cyclomatic complexity (1)",
-                "Function takes no parameters"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 78,
-                "namingPatterns": 0,
-                "astAnalysis": 16,
-                "commentAnalysis": 0,
-                "contextFilter": 0,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            "calls": []
           },
           {
             "name": "TenantGrid",
@@ -269,26 +109,7 @@
             "calls": [
               "tenants.map",
               "toLocaleDateString"
-            ],
-            "placeholderAnalysis": {
-              "classification": "definite-legitimate",
-              "confidence": 0,
-              "isPlaceholder": false,
-              "reasons": [
-                "Moderate context score",
-                "Safety cap applied: cheap heuristics only"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 0,
-                "namingPatterns": 0,
-                "astAnalysis": 0,
-                "commentAnalysis": 0,
-                "contextFilter": -15,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            ]
           },
           {
             "name": "AdminDashboard",
@@ -298,27 +119,7 @@
             "isAsync": false,
             "calls": [
               "useActionState"
-            ],
-            "placeholderAnalysis": {
-              "classification": "definite-legitimate",
-              "confidence": 0,
-              "isPlaceholder": false,
-              "reasons": [
-                "Low cyclomatic complexity (1)",
-                "High context score suggests legitimate implementation",
-                "Safety cap applied: cheap heuristics only"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 0,
-                "namingPatterns": 0,
-                "astAnalysis": 12,
-                "commentAnalysis": 0,
-                "contextFilter": -25,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            ]
           }
         ],
         "classes": [],
@@ -357,50 +158,6 @@
         "filePurpose": "Provides metadata, AdminPage (2 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 27,
-        "placeholderDetection": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/page.tsx",
-            "functionName": "AdminPage",
-            "classification": "definite-legitimate",
-            "confidence": 4,
-            "isPlaceholder": false,
-            "reasons": [
-              "Function takes no parameters",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "location": {
-              "startLine": 13,
-              "endLine": 26
-            },
-            "detectionMethods": {
-              "explicitMarkers": 0,
-              "namingPatterns": 0,
-              "astAnalysis": 4,
-              "commentAnalysis": 0,
-              "contextFilter": 0,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            }
-          }
-        ],
-        "findings": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/page.tsx",
-            "line": 13,
-            "endLine": 26,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 4,
-            "isPlaceholder": false,
-            "reasons": [
-              "Function takes no parameters",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "functionName": "AdminPage",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_admin_page_tsx:function:13:0"
-          }
-        ],
         "importedModules": [
           {
             "name": "getAllSubdomains",
@@ -472,26 +229,7 @@
               "verifySession",
               "redirect",
               "getAllSubdomains"
-            ],
-            "placeholderAnalysis": {
-              "classification": "definite-legitimate",
-              "confidence": 4,
-              "isPlaceholder": false,
-              "reasons": [
-                "Function takes no parameters",
-                "Safety cap applied: cheap heuristics only"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 0,
-                "namingPatterns": 0,
-                "astAnalysis": 4,
-                "commentAnalysis": 0,
-                "contextFilter": 0,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            ]
           }
         ],
         "classes": [],

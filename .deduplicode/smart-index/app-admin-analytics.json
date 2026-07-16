@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
   "version": "2.1.0",
-  "generatedAt": "2026-06-24T07:09:57.626Z",
+  "generatedAt": "2026-07-16T06:04:17.329Z",
   "configuration": {
-    "detectPlaceholders": true,
-    "placeholderConfidence": 45,
+    "detectPlaceholders": false,
+    "placeholderConfidence": 40,
     "placeholderAnalysisLevel": "enhanced",
     "detailLevel": "standard",
     "includeComplexity": false,
@@ -25,50 +25,6 @@
         "filePurpose": "Provides metadata, AnalyticsPage (2 exports)",
         "languageDetail": "TypeScript 5.4",
         "lineCount": 226,
-        "placeholderDetection": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/analytics/page.tsx",
-            "functionName": "AnalyticsPage",
-            "classification": "definite-legitimate",
-            "confidence": 4,
-            "isPlaceholder": false,
-            "reasons": [
-              "Function takes no parameters",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "location": {
-              "startLine": 30,
-              "endLine": 225
-            },
-            "detectionMethods": {
-              "explicitMarkers": 0,
-              "namingPatterns": 0,
-              "astAnalysis": 4,
-              "commentAnalysis": 0,
-              "contextFilter": 0,
-              "unusedCodeAnalysis": 0,
-              "externalUnusedChecks": 0,
-              "enhancedContext": 0
-            }
-          }
-        ],
-        "findings": [
-          {
-            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/admin/analytics/page.tsx",
-            "line": 30,
-            "endLine": 225,
-            "kind": "function",
-            "type": "explicit_marker",
-            "confidence": 4,
-            "isPlaceholder": false,
-            "reasons": [
-              "Function takes no parameters",
-              "Safety cap applied: cheap heuristics only"
-            ],
-            "functionName": "AnalyticsPage",
-            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_admin_analytics_page_tsx:function:30:0"
-          }
-        ],
         "importedModules": [
           {
             "name": "getAllSubdomains",
@@ -185,26 +141,7 @@
               "tenants.slice",
               "toLocaleDateString",
               "toLocaleString"
-            ],
-            "placeholderAnalysis": {
-              "classification": "definite-legitimate",
-              "confidence": 4,
-              "isPlaceholder": false,
-              "reasons": [
-                "Function takes no parameters",
-                "Safety cap applied: cheap heuristics only"
-              ],
-              "detectionMethods": {
-                "explicitMarkers": 0,
-                "namingPatterns": 0,
-                "astAnalysis": 4,
-                "commentAnalysis": 0,
-                "contextFilter": 0,
-                "unusedCodeAnalysis": 0,
-                "externalUnusedChecks": 0,
-                "enhancedContext": 0
-              }
-            }
+            ]
           }
         ],
         "classes": [],

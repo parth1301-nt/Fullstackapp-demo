@@ -1,6 +1,6 @@
 {
   "version": "2.1.0",
-  "generatedAt": "2026-07-14T11:30:46.891Z",
+  "generatedAt": "2026-07-16T06:09:13.927Z",
   "metadata": {
     "directory": {
       "name": "project",
@@ -617,7 +617,7 @@
       },
       {
         "path": "components/site-footer.tsx",
-        "lineCount": 139,
+        "lineCount": 142,
         "importedModules": [
           {
             "sourceModule": "next/link"

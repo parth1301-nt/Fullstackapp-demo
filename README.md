@@ -1,42 +1,32 @@
-# TEST 2
+# test
 
-TEST 2 is a project designed to demonstrate and validate core functionalities for [briefly describe the purpose, e.g., "data processing pipelines" or "API endpoint testing"]. This repository contains all necessary code, configuration, and documentation to set up and run the tests.
+A simple project for demonstrating testing functionality.
 
 ## Features
 
-- Automated test cases for core modules
-- Easy-to-read test results
-- Configurable test parameters
+- Example test cases
+- Easy-to-understand structure
+- Ready for extension
 
-## Getting Started
-
-### Prerequisites
-
-- [List requirements, e.g., Python 3.8+, Node.js, etc.]
-- [Any other dependencies]
-
-### Installation
+## Installation
 
 ```bash
-git clone https://github.com/yourusername/test2.git
-cd test2
-[Add installation steps, e.g., pip install -r requirements.txt]
+git clone https://github.com/yourusername/test.git
+cd test
 ```
 
-### Running Tests
+## Usage
+
+Run the tests with:
 
 ```bash
-[Provide command, e.g., python -m unittest]
+python -m unittest
 ```
 
 ## Contributing
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
 
-[Specify license, e.g., MIT License]
-
----
-
-For more information, see the [documentation](./docs) or contact [maintainer email].
+This project is licensed under the MIT License.

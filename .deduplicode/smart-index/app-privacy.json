@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:16.482Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "privacy",
+      "path": "app/privacy",
+      "purpose": "Enhanced directory analysis of privacy",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "page.tsx",
+        "path": "app/privacy/page.tsx",
+        "filePath": "app/privacy/page.tsx",
+        "filePurpose": "Provides metadata, PrivacyPage (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 152,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/privacy/page.tsx",
+            "functionName": "PrivacyPage",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 151
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/privacy/page.tsx",
+            "line": 11,
+            "endLine": 151,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "PrivacyPage",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_privacy_page_tsx:function:11:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SiteHeader",
+            "sourceModule": "@/components/site-header",
+            "isDefault": false,
+            "namedImports": [
+              "SiteHeader"
+            ]
+          },
+          {
+            "name": "SiteFooter",
+            "sourceModule": "@/components/site-footer",
+            "isDefault": false,
+            "namedImports": [
+              "SiteFooter"
+            ]
+          },
+          {
+            "name": "Shield",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Shield",
+              "Eye",
+              "Lock",
+              "Database"
+            ]
+          },
+          {
+            "name": "Metadata",
+            "sourceModule": "next",
+            "isDefault": false,
+            "namedImports": [
+              "Metadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "metadata",
+            "type": "const"
+          },
+          {
+            "name": "PrivacyPage",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "PrivacyPage",
+            "signature": "function PrivacyPage()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "toLocaleDateString"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 16,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "PrivacyPage",
+            "type": "function",
+            "signature": "function PrivacyPage()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "app/privacy/page.tsx",
+          "to": "@/components/site-header",
+          "type": "imports"
+        },
+        {
+          "from": "app/privacy/page.tsx",
+          "to": "@/components/site-footer",
+          "type": "imports"
+        },
+        {
+          "from": "app/privacy/page.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "app/privacy/page.tsx",
+          "to": "next",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

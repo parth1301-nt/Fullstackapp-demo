@@ -1,0 +1,275 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:24.872Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "[subdomain]",
+      "path": "app/s/[subdomain]",
+      "purpose": "Enhanced directory analysis of [subdomain]",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "page.tsx",
+        "path": "app/s/[subdomain]/page.tsx",
+        "filePath": "app/s/[subdomain]/page.tsx",
+        "filePurpose": "Provides generateMetadata, SubdomainPage (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 85,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/page.tsx",
+            "functionName": "generateMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/page.tsx",
+            "functionName": "SubdomainPage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 84
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/page.tsx",
+            "line": 7,
+            "endLine": 25,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "generateMetadata",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_s__subdomain__page_tsx:function:7:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/page.tsx",
+            "line": 27,
+            "endLine": 84,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "SubdomainPage",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_s__subdomain__page_tsx:function:27:1"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "Metadata",
+            "sourceModule": "next",
+            "isDefault": false,
+            "namedImports": [
+              "Metadata"
+            ]
+          },
+          {
+            "name": "notFound",
+            "sourceModule": "next/navigation",
+            "isDefault": false,
+            "namedImports": [
+              "notFound"
+            ]
+          },
+          {
+            "name": "getSubdomainData",
+            "sourceModule": "@/lib/subdomains",
+            "isDefault": false,
+            "namedImports": [
+              "getSubdomainData"
+            ]
+          },
+          {
+            "name": "protocol",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "protocol",
+              "rootDomain"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "generateMetadata",
+            "type": "function"
+          },
+          {
+            "name": "SubdomainPage",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "generateMetadata",
+            "signature": "function generateMetadata()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "getSubdomainData"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -37,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "SubdomainPage",
+            "signature": "function SubdomainPage()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "getSubdomainData",
+              "notFound"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "generateMetadata",
+            "type": "function",
+            "signature": "function generateMetadata()"
+          },
+          {
+            "name": "SubdomainPage",
+            "type": "function",
+            "signature": "function SubdomainPage()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "edit",
+        "relativePath": "edit",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of edit",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "app/s/[subdomain]/page.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/page.tsx",
+          "to": "next",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/page.tsx",
+          "to": "next/navigation",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/page.tsx",
+          "to": "@/lib/subdomains",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/page.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

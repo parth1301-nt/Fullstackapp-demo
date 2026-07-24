@@ -1,0 +1,1274 @@
+{
+  "version": "2.1.0",
+  "generatedAt": "2026-07-17T09:36:36.181Z",
+  "metadata": {
+    "directory": {
+      "name": "project",
+      "path": "",
+      "purpose": "Deterministic Smart Index (server-generated)"
+    },
+    "files": [
+      {
+        "path": "app/actions.ts",
+        "lineCount": 70,
+        "importedModules": [
+          {
+            "sourceModule": "@/lib/redis"
+          },
+          {
+            "sourceModule": "@/lib/subdomains"
+          },
+          {
+            "sourceModule": "next/cache"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [],
+        "keyElementsInFile": [
+          {
+            "name": "createSubdomainAction",
+            "type": "function"
+          },
+          {
+            "name": "deleteSubdomainAction",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/admin/analytics/page.tsx",
+        "lineCount": 226,
+        "importedModules": [
+          {
+            "sourceModule": "@/lib/subdomains"
+          },
+          {
+            "sourceModule": "@/lib/auth"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "next"
+          },
+          {
+            "sourceModule": "@/components/site-header"
+          },
+          {
+            "sourceModule": "@/components/site-footer"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next/link"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          },
+          {
+            "name": "metadata",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "AnalyticsPage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/admin/dashboard.tsx",
+        "lineCount": 147,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "@/app/actions"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AdminDashboard",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Tenant",
+            "type": "type"
+          },
+          {
+            "name": "DeleteState",
+            "type": "type"
+          },
+          {
+            "name": "DashboardHeader",
+            "type": "function"
+          },
+          {
+            "name": "TenantGrid",
+            "type": "function"
+          },
+          {
+            "name": "AdminDashboard",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/admin/page.tsx",
+        "lineCount": 27,
+        "importedModules": [
+          {
+            "sourceModule": "@/lib/subdomains"
+          },
+          {
+            "sourceModule": "@/lib/auth"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "next"
+          },
+          {
+            "sourceModule": "./dashboard"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          },
+          {
+            "name": "metadata",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "AdminPage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/api/logout/route.ts",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "sourceModule": "@/lib/auth"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "next/headers"
+          }
+        ],
+        "exportedElements": [],
+        "keyElementsInFile": [
+          {
+            "name": "POST",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/layout.tsx",
+        "lineCount": 30,
+        "importedModules": [
+          {
+            "sourceModule": "next"
+          },
+          {
+            "sourceModule": "next/font/google"
+          },
+          {
+            "sourceModule": "@vercel/speed-insights/next"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          },
+          {
+            "name": "metadata",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "RootLayout",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/login/page.tsx",
+        "lineCount": 83,
+        "importedModules": [
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "@/lib/auth"
+          },
+          {
+            "sourceModule": "@/components/site-header"
+          },
+          {
+            "sourceModule": "@/components/site-footer"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          },
+          {
+            "sourceModule": "@/components/ui/input"
+          },
+          {
+            "sourceModule": "@/components/ui/label"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next/link"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "LoginPage",
+            "type": "function"
+          },
+          {
+            "name": "loginAction",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/not-found.tsx",
+        "lineCount": 57,
+        "importedModules": [
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "NotFound",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/page.tsx",
+        "lineCount": 224,
+        "importedModules": [
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "./subdomain-form"
+          },
+          {
+            "sourceModule": "@/components/site-header"
+          },
+          {
+            "sourceModule": "@/components/site-footer"
+          },
+          {
+            "sourceModule": "@/components/testimonials"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "HomePage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/privacy/page.tsx",
+        "lineCount": 152,
+        "importedModules": [
+          {
+            "sourceModule": "@/components/site-header"
+          },
+          {
+            "sourceModule": "@/components/site-footer"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          },
+          {
+            "name": "metadata",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "PrivacyPage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/s/[subdomain]/edit/page.tsx",
+        "lineCount": 193,
+        "importedModules": [
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "@/lib/subdomains"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          },
+          {
+            "sourceModule": "@/components/ui/input"
+          },
+          {
+            "sourceModule": "@/components/ui/label"
+          },
+          {
+            "sourceModule": "@/components/ui/emoji-picker"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "next"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "generateMetadata",
+            "type": "function"
+          },
+          {
+            "name": "EditSubdomainPage",
+            "type": "function"
+          },
+          {
+            "name": "updateSubdomainAction",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/s/[subdomain]/page.tsx",
+        "lineCount": 85,
+        "importedModules": [
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "next"
+          },
+          {
+            "sourceModule": "next/navigation"
+          },
+          {
+            "sourceModule": "@/lib/subdomains"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "generateMetadata",
+            "type": "function"
+          },
+          {
+            "name": "SubdomainPage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/subdomain-form.tsx",
+        "lineCount": 153,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/components/ui/input"
+          },
+          {
+            "sourceModule": "@/components/ui/label"
+          },
+          {
+            "sourceModule": "@/components/ui/popover"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          },
+          {
+            "sourceModule": "@/components/ui/emoji-picker"
+          },
+          {
+            "sourceModule": "@/app/actions"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SubdomainForm",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "React",
+            "type": "type"
+          },
+          {
+            "name": "CreateState",
+            "type": "type"
+          },
+          {
+            "name": "SubdomainInput",
+            "type": "function"
+          },
+          {
+            "name": "IconPicker",
+            "type": "function"
+          },
+          {
+            "name": "SubdomainForm",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "app/terms/page.tsx",
+        "lineCount": 171,
+        "importedModules": [
+          {
+            "sourceModule": "@/components/site-header"
+          },
+          {
+            "sourceModule": "@/components/site-footer"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "next"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          },
+          {
+            "name": "metadata",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "TermsPage",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/site-footer.tsx",
+        "lineCount": 147,
+        "importedModules": [
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SiteFooter",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "SiteFooter",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/site-header.tsx",
+        "lineCount": 75,
+        "importedModules": [
+          {
+            "sourceModule": "next/link"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "@/components/ui/button"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SiteHeader",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "SiteHeader",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/testimonials.tsx",
+        "lineCount": 145,
+        "importedModules": [
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "@/components/ui/card"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Testimonial",
+            "type": "interface"
+          },
+          {
+            "name": "Testimonials",
+            "type": "function"
+          },
+          {
+            "name": "TestimonialsCompact",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Testimonial",
+            "type": "interface"
+          },
+          {
+            "name": "exceeded",
+            "type": "interface"
+          },
+          {
+            "name": "TestimonialCard",
+            "type": "function"
+          },
+          {
+            "name": "Testimonials",
+            "type": "function"
+          },
+          {
+            "name": "TestimonialsCompact",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/button.tsx",
+        "lineCount": 69,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@radix-ui/react-slot"
+          },
+          {
+            "sourceModule": "class-variance-authority"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Button"
+          },
+          {
+            "name": "buttonVariants"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "VariantProps",
+            "type": "type"
+          },
+          {
+            "name": "Button",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/card.tsx",
+        "lineCount": 102,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Card"
+          },
+          {
+            "name": "CardHeader"
+          },
+          {
+            "name": "CardFooter"
+          },
+          {
+            "name": "CardTitle"
+          },
+          {
+            "name": "CardAction"
+          },
+          {
+            "name": "CardDescription"
+          },
+          {
+            "name": "CardContent"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Card",
+            "type": "function"
+          },
+          {
+            "name": "CardHeader",
+            "type": "function"
+          },
+          {
+            "name": "CardTitle",
+            "type": "function"
+          },
+          {
+            "name": "CardDescription",
+            "type": "function"
+          },
+          {
+            "name": "CardAction",
+            "type": "function"
+          },
+          {
+            "name": "CardContent",
+            "type": "function"
+          },
+          {
+            "name": "CardFooter",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/dialog.tsx",
+        "lineCount": 173,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@radix-ui/react-dialog"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Dialog"
+          },
+          {
+            "name": "DialogClose"
+          },
+          {
+            "name": "DialogContent"
+          },
+          {
+            "name": "DialogDescription"
+          },
+          {
+            "name": "DialogFooter"
+          },
+          {
+            "name": "DialogHeader"
+          },
+          {
+            "name": "DialogOverlay"
+          },
+          {
+            "name": "DialogPortal"
+          },
+          {
+            "name": "DialogTitle"
+          },
+          {
+            "name": "DialogTrigger"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Dialog",
+            "type": "function"
+          },
+          {
+            "name": "DialogTrigger",
+            "type": "function"
+          },
+          {
+            "name": "DialogPortal",
+            "type": "function"
+          },
+          {
+            "name": "DialogClose",
+            "type": "function"
+          },
+          {
+            "name": "DialogOverlay",
+            "type": "function"
+          },
+          {
+            "name": "DialogContent",
+            "type": "function"
+          },
+          {
+            "name": "DialogHeader",
+            "type": "function"
+          },
+          {
+            "name": "DialogFooter",
+            "type": "function"
+          },
+          {
+            "name": "DialogTitle",
+            "type": "function"
+          },
+          {
+            "name": "DialogDescription",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/emoji-picker.tsx",
+        "lineCount": 187,
+        "importedModules": [
+          {
+            "sourceModule": "frimousse"
+          },
+          {
+            "sourceModule": "lucide-react"
+          },
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "EmojiPicker"
+          },
+          {
+            "name": "EmojiPickerSearch"
+          },
+          {
+            "name": "EmojiPickerContent"
+          },
+          {
+            "name": "EmojiPickerFooter"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "EmojiPickerListCategoryHeaderProps",
+            "type": "type"
+          },
+          {
+            "name": "EmojiPickerListEmojiProps",
+            "type": "type"
+          },
+          {
+            "name": "EmojiPickerListRowProps",
+            "type": "type"
+          },
+          {
+            "name": "EmojiPicker",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerSearch",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerRow",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerEmoji",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerCategoryHeader",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerContent",
+            "type": "function"
+          },
+          {
+            "name": "EmojiPickerFooter",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/input.tsx",
+        "lineCount": 30,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Input"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Input",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/label.tsx",
+        "lineCount": 41,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@radix-ui/react-label"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Label"
+          },
+          {
+            "name": "LabelHint"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Label",
+            "type": "function"
+          },
+          {
+            "name": "LabelHint",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "components/ui/popover.tsx",
+        "lineCount": 55,
+        "importedModules": [
+          {
+            "sourceModule": "react"
+          },
+          {
+            "sourceModule": "@radix-ui/react-popover"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Popover"
+          },
+          {
+            "name": "PopoverTrigger"
+          },
+          {
+            "name": "PopoverContent"
+          },
+          {
+            "name": "PopoverAnchor"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "Popover",
+            "type": "function"
+          },
+          {
+            "name": "PopoverTrigger",
+            "type": "function"
+          },
+          {
+            "name": "PopoverContent",
+            "type": "function"
+          },
+          {
+            "name": "PopoverAnchor",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "lib/auth.ts",
+        "lineCount": 58,
+        "importedModules": [
+          {
+            "sourceModule": "next/headers"
+          },
+          {
+            "sourceModule": "@/lib/redis"
+          }
+        ],
+        "exportedElements": [],
+        "keyElementsInFile": [
+          {
+            "name": "createSession",
+            "type": "function"
+          },
+          {
+            "name": "verifySession",
+            "type": "function"
+          },
+          {
+            "name": "destroySession",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "lib/redis.ts",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "sourceModule": "@upstash/redis"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "redis",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [],
+        "placeholderDetection": []
+      },
+      {
+        "path": "lib/subdomains.ts",
+        "lineCount": 62,
+        "importedModules": [
+          {
+            "sourceModule": "@/lib/redis"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "isValidIcon",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "SubdomainData",
+            "type": "type"
+          },
+          {
+            "name": "isValidIcon",
+            "type": "function"
+          },
+          {
+            "name": "getSubdomainData",
+            "type": "function"
+          },
+          {
+            "name": "getAllSubdomains",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "lib/utils.ts",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "sourceModule": "clsx"
+          },
+          {
+            "sourceModule": "tailwind-merge"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "protocol",
+            "type": "const"
+          },
+          {
+            "name": "rootDomain",
+            "type": "const"
+          },
+          {
+            "name": "cn",
+            "type": "function"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "ClassValue",
+            "type": "type"
+          },
+          {
+            "name": "cn",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "middleware.ts",
+        "lineCount": 74,
+        "importedModules": [
+          {
+            "sourceModule": "next/server"
+          },
+          {
+            "sourceModule": "@/lib/utils"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "config",
+            "type": "const"
+          }
+        ],
+        "keyElementsInFile": [
+          {
+            "name": "NextRequest",
+            "type": "type"
+          },
+          {
+            "name": "extractSubdomain",
+            "type": "function"
+          },
+          {
+            "name": "middleware",
+            "type": "function"
+          }
+        ],
+        "placeholderDetection": []
+      },
+      {
+        "path": "next.config.ts",
+        "lineCount": 25,
+        "importedModules": [
+          {
+            "sourceModule": "next"
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "default",
+            "type": "default"
+          }
+        ],
+        "keyElementsInFile": [],
+        "placeholderDetection": []
+      }
+    ]
+  }
+}

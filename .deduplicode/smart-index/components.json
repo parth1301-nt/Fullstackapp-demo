@@ -1,0 +1,660 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:41.214Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "components",
+      "path": "components",
+      "purpose": "Enhanced directory analysis of components",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "site-footer.tsx",
+        "path": "components/site-footer.tsx",
+        "filePath": "components/site-footer.tsx",
+        "filePurpose": "Exports function SiteFooter for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 133,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/site-footer.tsx",
+            "functionName": "SiteFooter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation; Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 132
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/site-footer.tsx",
+            "line": 23,
+            "endLine": 132,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1) Function takes no parameters High context score suggests legitimate implementation; Intentionally unused parameter/variable (prefixed with _) Safety cap applied: cheap he"
+            ],
+            "functionName": "SiteFooter",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_site-footer_tsx:function:23:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "Globe",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Globe",
+              "Github",
+              "ArrowUpRight"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain",
+              "protocol"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SiteFooter",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "SiteFooter",
+            "signature": "function SiteFooter()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "getFullYear",
+              "footerLinks.product.map",
+              "footerLinks.platform.map",
+              "footerLinks.legal.map"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation; Intentionally unused parameter/variable (prefixed with _)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": -50,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SiteFooter",
+            "type": "function",
+            "signature": "function SiteFooter()"
+          }
+        ]
+      },
+      {
+        "name": "site-header.tsx",
+        "path": "components/site-header.tsx",
+        "filePath": "components/site-header.tsx",
+        "filePurpose": "Exports function SiteHeader for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 75,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/site-header.tsx",
+            "functionName": "SiteHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 74
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/site-header.tsx",
+            "line": 14,
+            "endLine": 74,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "SiteHeader",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_site-header_tsx:function:14:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "Globe",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Globe",
+              "LayoutDashboard",
+              "Sparkles"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "rootDomain",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "rootDomain"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SiteHeader",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "SiteHeader",
+            "signature": "function SiteHeader()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "navLinks.map"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": -25,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SiteHeader",
+            "type": "function",
+            "signature": "function SiteHeader()"
+          }
+        ]
+      },
+      {
+        "name": "testimonials.tsx",
+        "path": "components/testimonials.tsx",
+        "filePath": "components/testimonials.tsx",
+        "filePurpose": "Test file for verifying functionality (exports: Testimonial, Testimonials, TestimonialsCompact)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 145,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "functionName": "TestimonialCard",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 63,
+              "endLine": 98
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "functionName": "Testimonials",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 100,
+              "endLine": 120
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "functionName": "TestimonialsCompact",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 122,
+              "endLine": 144
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "line": 63,
+            "endLine": 98,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "TestimonialCard",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_testimonials_tsx:function:63:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "line": 100,
+            "endLine": 120,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "Testimonials",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_testimonials_tsx:function:100:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/components/testimonials.tsx",
+            "line": 122,
+            "endLine": 144,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "TestimonialsCompact",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_components_testimonials_tsx:function:122:2"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Star",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "Star",
+              "Quote"
+            ]
+          },
+          {
+            "name": "Card",
+            "sourceModule": "@/components/ui/card",
+            "isDefault": false,
+            "namedImports": [
+              "Card",
+              "CardContent",
+              "CardHeader",
+              "CardTitle"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Testimonial",
+            "type": "interface"
+          },
+          {
+            "name": "Testimonials",
+            "type": "function"
+          },
+          {
+            "name": "TestimonialsCompact",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "TestimonialCard",
+            "signature": "function TestimonialCard()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "map",
+              "Array",
+              "testimonial.name.charAt"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 12,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "Testimonials",
+            "signature": "function Testimonials()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "testimonials.map"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": -25,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "TestimonialsCompact",
+            "signature": "function TestimonialsCompact()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "testimonials.slice",
+              "featuredTestimonials.map"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 16,
+                "commentAnalysis": 0,
+                "contextFilter": -25,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestimonialCard",
+            "type": "function",
+            "signature": "function TestimonialCard()"
+          },
+          {
+            "name": "Testimonials",
+            "type": "function",
+            "signature": "function Testimonials()"
+          },
+          {
+            "name": "TestimonialsCompact",
+            "type": "function",
+            "signature": "function TestimonialsCompact()"
+          },
+          {
+            "name": "Testimonial",
+            "type": "interface",
+            "signature": "interface Testimonial"
+          },
+          {
+            "name": "exceeded",
+            "type": "interface",
+            "signature": "interface exceeded"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "ui",
+        "relativePath": "ui",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of ui",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "components/site-footer.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-footer.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-footer.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-footer.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-header.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-header.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-header.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "components/site-header.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "components/testimonials.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "components/testimonials.tsx",
+          "to": "@/components/ui/card",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

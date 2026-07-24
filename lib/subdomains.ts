@@ -32,30 +32,40 @@ type SubdomainData = {
 };
 
 export async function getSubdomainData(subdomain: string) {
-  const sanitizedSubdomain = subdomain.toLowerCase().replace(/[^a-z0-9-]/g, '');
-  const data = await redis.get<SubdomainData>(
-    `subdomain:${sanitizedSubdomain}`
-  );
-  return data;
+  try {
+    const sanitizedSubdomain = subdomain.toLowerCase().replace(/[^a-z0-9-]/g, '');
+    const data = await redis.get<SubdomainData>(
+      `subdomain:${sanitizedSubdomain}`
+    );
+    return data;
+  } catch (error) {
+    console.error('Redis error in getSubdomainData:', error);
+    return null;
+  }
 }
 
 export async function getAllSubdomains() {
-  const keys = await redis.keys('subdomain:*');
+  try {
+    const keys = await redis.keys('subdomain:*');
 
-  if (!keys.length) {
+    if (!keys.length) {
+      return [];
+    }
+
+    const values = await redis.mget<SubdomainData[]>(...keys);
+
+    return keys.map((key, index) => {
+      const subdomain = key.replace('subdomain:', '');
+      const data = values[index];
+
+      return {
+        subdomain,
+        emoji: data?.emoji || '❓',
+        createdAt: data?.createdAt || Date.now()
+      };
+    });
+  } catch (error) {
+    console.error('Redis error in getAllSubdomains:', error);
     return [];
   }
-
-  const values = await redis.mget<SubdomainData[]>(...keys);
-
-  return keys.map((key, index) => {
-    const subdomain = key.replace('subdomain:', '');
-    const data = values[index];
-
-    return {
-      subdomain,
-      emoji: data?.emoji || '❓',
-      createdAt: data?.createdAt || Date.now()
-    };
-  });
 }

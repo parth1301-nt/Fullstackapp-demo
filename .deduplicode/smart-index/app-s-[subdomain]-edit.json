@@ -1,0 +1,443 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:20.875Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "edit",
+      "path": "app/s/[subdomain]/edit",
+      "purpose": "Enhanced directory analysis of edit",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "page.tsx",
+        "path": "app/s/[subdomain]/edit/page.tsx",
+        "filePath": "app/s/[subdomain]/edit/page.tsx",
+        "filePurpose": "Provides generateMetadata, EditSubdomainPage (2 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 193,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "functionName": "EditSubdomainPage",
+            "classification": "uncertain",
+            "confidence": 45,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 192
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "reasonSignals": [
+              {
+                "ruleId": "explicit-placeholder-stub-mock",
+                "score": 45,
+                "message": "Contains placeholder/stub/mock/dummy marker",
+                "axis": "intent",
+                "tags": [
+                  "intent"
+                ]
+              }
+            ]
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "functionName": "generateMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "functionName": "updateSubdomainAction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 43,
+              "endLine": 70
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "line": 19,
+            "endLine": 29,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "generateMetadata",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_s__subdomain__edit_page_tsx:function:19:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "line": 31,
+            "endLine": 192,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 45,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains placeholder/stub/mock/dummy marker",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "EditSubdomainPage",
+            "ruleId": "explicit-placeholder-stub-mock",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_s__subdomain__edit_page_tsx:function:31:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/app/s/[subdomain]/edit/page.tsx",
+            "line": 43,
+            "endLine": 70,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "updateSubdomainAction",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_app_s__subdomain__edit_page_tsx:function:43:2"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "redirect",
+            "sourceModule": "next/navigation",
+            "isDefault": false,
+            "namedImports": [
+              "redirect"
+            ]
+          },
+          {
+            "name": "getSubdomainData",
+            "sourceModule": "@/lib/subdomains",
+            "isDefault": false,
+            "namedImports": [
+              "getSubdomainData"
+            ]
+          },
+          {
+            "name": "protocol",
+            "sourceModule": "@/lib/utils",
+            "isDefault": false,
+            "namedImports": [
+              "protocol",
+              "rootDomain"
+            ]
+          },
+          {
+            "name": "Button",
+            "sourceModule": "@/components/ui/button",
+            "isDefault": false,
+            "namedImports": [
+              "Button"
+            ]
+          },
+          {
+            "name": "Card",
+            "sourceModule": "@/components/ui/card",
+            "isDefault": false,
+            "namedImports": [
+              "Card",
+              "CardContent",
+              "CardDescription",
+              "CardHeader",
+              "CardTitle"
+            ]
+          },
+          {
+            "name": "Input",
+            "sourceModule": "@/components/ui/input",
+            "isDefault": false,
+            "namedImports": [
+              "Input"
+            ]
+          },
+          {
+            "name": "Label",
+            "sourceModule": "@/components/ui/label",
+            "isDefault": false,
+            "namedImports": [
+              "Label"
+            ]
+          },
+          {
+            "name": "EmojiPicker",
+            "sourceModule": "@/components/ui/emoji-picker",
+            "isDefault": false,
+            "namedImports": [
+              "EmojiPicker"
+            ]
+          },
+          {
+            "name": "ArrowLeft",
+            "sourceModule": "lucide-react",
+            "isDefault": false,
+            "namedImports": [
+              "ArrowLeft",
+              "Save",
+              "Globe"
+            ]
+          },
+          {
+            "name": "Link",
+            "sourceModule": "next/link",
+            "isDefault": true
+          },
+          {
+            "name": "Metadata",
+            "sourceModule": "next",
+            "isDefault": false,
+            "namedImports": [
+              "Metadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "generateMetadata",
+            "type": "function"
+          },
+          {
+            "name": "EditSubdomainPage",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "generateMetadata",
+            "signature": "function generateMetadata()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 12,
+                "commentAnalysis": 0,
+                "contextFilter": -37,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "EditSubdomainPage",
+            "signature": "function EditSubdomainPage()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "getSubdomainData",
+              "redirect",
+              "formData.get",
+              "Date.now",
+              "redis.set"
+            ],
+            "placeholderAnalysis": {
+              "classification": "uncertain",
+              "confidence": 45,
+              "isPlaceholder": true,
+              "reasons": [
+                "Contains placeholder/stub/mock/dummy marker",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 45,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": 0,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "updateSubdomainAction",
+            "signature": "function updateSubdomainAction()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Moderate context score",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -15,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "generateMetadata",
+            "type": "function",
+            "signature": "function generateMetadata()"
+          },
+          {
+            "name": "EditSubdomainPage",
+            "type": "function",
+            "signature": "function EditSubdomainPage()"
+          },
+          {
+            "name": "updateSubdomainAction",
+            "type": "function",
+            "signature": "function updateSubdomainAction()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "next/navigation",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/lib/subdomains",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/lib/utils",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/components/ui/button",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/components/ui/card",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/components/ui/input",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/components/ui/label",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "@/components/ui/emoji-picker",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "lucide-react",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "next/link",
+          "type": "imports"
+        },
+        {
+          "from": "app/s/[subdomain]/edit/page.tsx",
+          "to": "next",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

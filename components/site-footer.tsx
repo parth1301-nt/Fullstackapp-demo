@@ -3,6 +3,18 @@ import { Globe, Github, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { rootDomain, protocol } from '@/lib/utils';
 
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+// teest commanets
+
+
+
 const footerLinks = {
   product: [
     { href: '#features', label: 'Features' },
@@ -22,6 +34,8 @@ const footerLinks = {
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
+
+
 
   return (
     <footer className="relative z-10 border-t border-border bg-muted/30">

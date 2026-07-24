@@ -38,24 +38,34 @@ export async function createSubdomainAction(
     };
   }
 
-  const subdomainAlreadyExists = await redis.get(
-    `subdomain:${sanitizedSubdomain}`
-  );
-  if (subdomainAlreadyExists) {
+  try {
+    const subdomainAlreadyExists = await redis.get(
+      `subdomain:${sanitizedSubdomain}`
+    );
+    if (subdomainAlreadyExists) {
+      return {
+        subdomain,
+        icon,
+        success: false,
+        error: 'This subdomain is already taken'
+      };
+    }
+
+    await redis.set(`subdomain:${sanitizedSubdomain}`, {
+      emoji: icon,
+      createdAt: Date.now()
+    });
+
+    redirect(`${protocol}://${sanitizedSubdomain}.${rootDomain}`);
+  } catch (error) {
+    console.error('Redis error during subdomain creation:', error);
     return {
       subdomain,
       icon,
       success: false,
-      error: 'This subdomain is already taken'
+      error: 'Failed to create subdomain. Please check your Redis configuration and try again.'
     };
   }
-
-  await redis.set(`subdomain:${sanitizedSubdomain}`, {
-    emoji: icon,
-    createdAt: Date.now()
-  });
-
-  redirect(`${protocol}://${sanitizedSubdomain}.${rootDomain}`);
 }
 
 export async function deleteSubdomainAction(
@@ -63,7 +73,12 @@ export async function deleteSubdomainAction(
   formData: FormData
 ) {
   const subdomain = formData.get('subdomain');
-  await redis.del(`subdomain:${subdomain}`);
-  revalidatePath('/admin');
-  return { success: 'Domain deleted successfully' };
+  try {
+    await redis.del(`subdomain:${subdomain}`);
+    revalidatePath('/admin');
+    return { success: true, message: 'Domain deleted successfully' };
+  } catch (error) {
+    console.error('Redis error during subdomain deletion:', error);
+    return { success: false, error: 'Failed to delete subdomain. Please check your Redis configuration and try again.' };
+  }
 }

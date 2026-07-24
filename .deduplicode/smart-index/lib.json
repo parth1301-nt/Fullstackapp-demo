@@ -1,0 +1,801 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2026-06-24T07:10:45.495Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 45,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "lib",
+      "path": "lib",
+      "purpose": "Enhanced directory analysis of lib",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "auth.ts",
+        "path": "lib/auth.ts",
+        "filePath": "lib/auth.ts",
+        "filePurpose": "Provides createSession, verifySession, destroySession (3 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 58,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "functionName": "createSession",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 34
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -60,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "functionName": "destroySession",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "functionName": "verifySession",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 36,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "line": 11,
+            "endLine": 34,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "createSession",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_auth_ts:function:11:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "line": 36,
+            "endLine": 46,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables Safety cap applied: che"
+            ],
+            "functionName": "verifySession",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_auth_ts:function:36:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/auth.ts",
+            "line": 48,
+            "endLine": 57,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "destroySession",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_auth_ts:function:48:2"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "cookies",
+            "sourceModule": "next/headers",
+            "isDefault": false,
+            "namedImports": [
+              "cookies"
+            ]
+          },
+          {
+            "name": "redis",
+            "sourceModule": "@/lib/redis",
+            "isDefault": false,
+            "namedImports": [
+              "redis"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "createSession",
+            "type": "function"
+          },
+          {
+            "name": "verifySession",
+            "type": "function"
+          },
+          {
+            "name": "destroySession",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "createSession",
+            "signature": "function createSession()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "crypto.randomUUID",
+              "cookies",
+              "redis.set",
+              "cookieStore.set"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "High context score suggests legitimate implementation; Properly uses assigned variables",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -60,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "verifySession",
+            "signature": "function verifySession()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cookies",
+              "cookieStore.get",
+              "redis.get"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Function takes no parameters",
+                "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": -80,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "destroySession",
+            "signature": "function destroySession()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "cookies",
+              "cookieStore.get",
+              "redis.del",
+              "cookieStore.delete"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Function takes no parameters",
+                "High context score suggests legitimate implementation",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": -25,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createSession",
+            "type": "function",
+            "signature": "function createSession()"
+          },
+          {
+            "name": "verifySession",
+            "type": "function",
+            "signature": "function verifySession()"
+          },
+          {
+            "name": "destroySession",
+            "type": "function",
+            "signature": "function destroySession()"
+          },
+          {
+            "name": "SESSION_COOKIE_NAME",
+            "type": "const",
+            "signature": "const SESSION_COOKIE_NAME"
+          },
+          {
+            "name": "SESSION_DURATION",
+            "type": "const",
+            "signature": "const SESSION_DURATION"
+          },
+          {
+            "name": "ADMIN_PASSWORD",
+            "type": "const",
+            "signature": "const ADMIN_PASSWORD"
+          }
+        ]
+      },
+      {
+        "name": "redis.ts",
+        "path": "lib/redis.ts",
+        "filePath": "lib/redis.ts",
+        "filePurpose": "Exports const redis for use by other modules",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "placeholderDetection": [],
+        "importedModules": [
+          {
+            "name": "Redis",
+            "sourceModule": "@upstash/redis",
+            "isDefault": false,
+            "namedImports": [
+              "Redis"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "redis",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "subdomains.ts",
+        "path": "lib/subdomains.ts",
+        "filePath": "lib/subdomains.ts",
+        "filePurpose": "Provides isValidIcon, getSubdomainData, getAllSubdomains (3 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 62,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "functionName": "getAllSubdomains",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "functionName": "getSubdomainData",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 34,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "functionName": "isValidIcon",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 3,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -75,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "line": 3,
+            "endLine": 27,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "isValidIcon",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_subdomains_ts:function:3:0"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "line": 34,
+            "endLine": 40,
+            "kind": "function",
+            "type": "empty_impl",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1) Returns simple/hardcoded value Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned v"
+            ],
+            "functionName": "getSubdomainData",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_subdomains_ts:function:34:1"
+          },
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/subdomains.ts",
+            "line": 42,
+            "endLine": 61,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables; Returns computed value"
+            ],
+            "functionName": "getAllSubdomains",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_subdomains_ts:function:42:2"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "redis",
+            "sourceModule": "@/lib/redis",
+            "isDefault": false,
+            "namedImports": [
+              "redis"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "isValidIcon",
+            "type": "function"
+          },
+          {
+            "name": "getSubdomainData",
+            "type": "function"
+          },
+          {
+            "name": "getAllSubdomains",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "isValidIcon",
+            "signature": "function isValidIcon()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "emojiPattern.test",
+              "console.warn"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Test file - simple test helpers expected",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 0,
+                "commentAnalysis": 0,
+                "contextFilter": -75,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "getSubdomainData",
+            "signature": "function getSubdomainData()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "replace",
+              "subdomain.toLowerCase",
+              "redis.get"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Returns simple/hardcoded value",
+                "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 24,
+                "commentAnalysis": 0,
+                "contextFilter": -80,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          },
+          {
+            "name": "getAllSubdomains",
+            "signature": "function getAllSubdomains()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "redis.keys",
+              "redis.mget",
+              "keys.map",
+              "key.replace",
+              "Date.now"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Function takes no parameters",
+                "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 4,
+                "commentAnalysis": 0,
+                "contextFilter": -80,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "isValidIcon",
+            "type": "function",
+            "signature": "function isValidIcon()"
+          },
+          {
+            "name": "getSubdomainData",
+            "type": "function",
+            "signature": "function getSubdomainData()"
+          },
+          {
+            "name": "getAllSubdomains",
+            "type": "function",
+            "signature": "function getAllSubdomains()"
+          },
+          {
+            "name": "SubdomainData",
+            "type": "type",
+            "signature": "type SubdomainData"
+          }
+        ]
+      },
+      {
+        "name": "utils.ts",
+        "path": "lib/utils.ts",
+        "filePath": "lib/utils.ts",
+        "filePurpose": "Provides protocol, rootDomain, cn (3 exports)",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "placeholderDetection": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/utils.ts",
+            "functionName": "cn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "findings": [
+          {
+            "filePath": "/tmp/placeholder-detection-1782284988850-d8b5gj848/lib/utils.ts",
+            "line": 9,
+            "endLine": 11,
+            "kind": "function",
+            "type": "explicit_marker",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "functionName": "cn",
+            "id": "_tmp_placeholder-detection-1782284988850-d8b5gj848_lib_utils_ts:function:9:0"
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "clsx",
+            "sourceModule": "clsx",
+            "isDefault": false,
+            "namedImports": [
+              "clsx",
+              "ClassValue"
+            ]
+          },
+          {
+            "name": "twMerge",
+            "sourceModule": "tailwind-merge",
+            "isDefault": false,
+            "namedImports": [
+              "twMerge"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "protocol",
+            "type": "const"
+          },
+          {
+            "name": "rootDomain",
+            "type": "const"
+          },
+          {
+            "name": "cn",
+            "type": "function"
+          }
+        ],
+        "functions": [
+          {
+            "name": "cn",
+            "signature": "function cn()",
+            "parameters": [],
+            "returnType": "",
+            "isAsync": false,
+            "calls": [
+              "twMerge",
+              "clsx"
+            ],
+            "placeholderAnalysis": {
+              "classification": "definite-legitimate",
+              "confidence": 0,
+              "isPlaceholder": false,
+              "reasons": [
+                "Low cyclomatic complexity (1)",
+                "Very short function (3 lines)",
+                "Utility function with clear purpose; Returns computed value from external calls or processing",
+                "Safety cap applied: cheap heuristics only"
+              ],
+              "detectionMethods": {
+                "explicitMarkers": 0,
+                "namingPatterns": 0,
+                "astAnalysis": 18,
+                "commentAnalysis": 0,
+                "contextFilter": -30,
+                "unusedCodeAnalysis": 0,
+                "externalUnusedChecks": 0,
+                "enhancedContext": 0
+              }
+            }
+          }
+        ],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "cn",
+            "type": "function",
+            "signature": "function cn()"
+          },
+          {
+            "name": "ClassValue",
+            "type": "type",
+            "signature": "type ClassValue"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "lib/auth.ts",
+          "to": "next/headers",
+          "type": "imports"
+        },
+        {
+          "from": "lib/auth.ts",
+          "to": "@/lib/redis",
+          "type": "imports"
+        },
+        {
+          "from": "lib/redis.ts",
+          "to": "@upstash/redis",
+          "type": "imports"
+        },
+        {
+          "from": "lib/subdomains.ts",
+          "to": "@/lib/redis",
+          "type": "imports"
+        },
+        {
+          "from": "lib/utils.ts",
+          "to": "clsx",
+          "type": "imports"
+        },
+        {
+          "from": "lib/utils.ts",
+          "to": "tailwind-merge",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}
